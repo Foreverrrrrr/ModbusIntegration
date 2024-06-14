@@ -1,8 +1,13 @@
 ﻿using System;
+using System.Collections;
+using System.IO;
 using System.Linq;
 using System.Net;
+using System.Net.Sockets;
+using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace ModbusIntegration.Modbus
 {
@@ -236,6 +241,7 @@ namespace ModbusIntegration.Modbus
             msg[8] = (byte)(addr >> 8);
             msg[9] = (byte)(addr & 0xFF);
             Array.Copy(value, 0, msg, 10, value.Length);
+
             return msg;
         }
 
