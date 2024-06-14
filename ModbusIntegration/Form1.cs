@@ -1,6 +1,9 @@
 ﻿using ModbusIntegration.Modbus;
 using System;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using ModbusIntegration.Modbus;
 
 namespace ModbusIntegration
 {
@@ -11,6 +14,7 @@ namespace ModbusIntegration
         {
             InitializeComponent();
             modbusTCP_Client = new AsyncSharpTcpClient("122.51.121.66", 502);
+            modbusTCP_Client = new AsyncSharpTcpClient("127.0.0.1", 502);
             modbusTCP_Client.SuccessfuConnectEvent += (t, ip) =>
             {
                 RetextADD("连接到服务器");
@@ -80,11 +84,13 @@ namespace ModbusIntegration
         private void button7_Click(object sender, EventArgs e)
         {
             modbusTCP_Client.WriteBool("100", new bool[] { true, true, false });
+            modbusTCP_Client.WriteBool("100", new bool[] { true, true });
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
             modbusTCP_Client.WriteIn16("0", 66);
+            modbusTCP_Client.WriteIn16("0", 15);
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -109,6 +115,7 @@ namespace ModbusIntegration
 
         private void button13_Click(object sender, EventArgs e)
         {
+            modbusTCP_Client.WriteIn32("10", 100);
         }
     }
 }
