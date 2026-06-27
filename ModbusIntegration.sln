@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModbusIntegration", "Modbus
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{C192FC5F-5D94-444A-B2B4-D449CC63F9CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{654FABA0-908A-42C9-8347-FD9A7BE9CAB7}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,14 +31,6 @@ Global
 		{C192FC5F-5D94-444A-B2B4-D449CC63F9CA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C192FC5F-5D94-444A-B2B4-D449CC63F9CA}.Release|x64.ActiveCfg = Release|Any CPU
 		{C192FC5F-5D94-444A-B2B4-D449CC63F9CA}.Release|x64.Build.0 = Release|Any CPU
-		{654FABA0-908A-42C9-8347-FD9A7BE9CAB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{654FABA0-908A-42C9-8347-FD9A7BE9CAB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{654FABA0-908A-42C9-8347-FD9A7BE9CAB7}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{654FABA0-908A-42C9-8347-FD9A7BE9CAB7}.Debug|x64.Build.0 = Debug|Any CPU
-		{654FABA0-908A-42C9-8347-FD9A7BE9CAB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{654FABA0-908A-42C9-8347-FD9A7BE9CAB7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{654FABA0-908A-42C9-8347-FD9A7BE9CAB7}.Release|x64.ActiveCfg = Release|Any CPU
-		{654FABA0-908A-42C9-8347-FD9A7BE9CAB7}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

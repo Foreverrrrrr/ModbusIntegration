@@ -14,7 +14,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestMethod1()
         {
-            var modbusTCP_Client = new ModbusTCPClientPlus("127.0.0.1", 5111);
+            var modbusTCP_Client = new ModbusTCPClientPlus("127.0.0.1", 502);
             modbusTCP_Client.SuccessfulConnectEvent += (t, ip, port) =>
             {
                 Console.WriteLine("连接到服务器");
